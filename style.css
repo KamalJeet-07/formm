@@ -10,7 +10,7 @@ input [type=text] {
 }
 
 input[type=text]:focus {
-  width: 70%;
+  width: 50%;
 }
 
 input[type=email] {
@@ -20,7 +20,7 @@ input[type=email] {
 }
 
 input[type=email]:focus {
-  width: 70%;
+  width: 50%;
 }
 
 textarea {
