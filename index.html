@@ -31,10 +31,15 @@
 
 </form>
 
-
 <script src="https://web3forms.com/client/script.js" async defer></script>
   </div>
-  
+  <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "24aa23e1-6f0f-4ffa-aeec-4403567a9814",
+        apiHost: "https://flowise-test-01.onrender.com",
+    })
+</script>
 </body>
 
 </html>
