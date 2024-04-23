@@ -1,28 +1,17 @@
-body {
-  align-content: center;
-}
-div {
-  text-align: center;
-}
-input [type=text] {
-   
-    transition: width 0.4s ease-in-out;
+.invalid-feedback,
+.empty-feedback {
+  display: none;
 }
 
-input[type=text]:focus {
-  width: 50%;
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
 }
 
-input[type=email] {
-  
-  align-content: center;
-   transition: width 0.4s ease-in-out;
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
 }
 
-input[type=email]:focus {
-  width: 50%;
-}
-
-textarea {
-  font-family: Times New Roman;
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
 }
